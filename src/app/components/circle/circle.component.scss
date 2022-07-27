@@ -1,0 +1,15 @@
+.circle {
+    border-radius: 100%;
+}
+
+.label {
+    height: 100%;
+    width: 100%;
+    display: table;
+    .text { 
+        color: white;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+}

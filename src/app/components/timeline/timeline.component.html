@@ -1,0 +1,55 @@
+<div class="container" (mouseout)="mouseOvered=999">
+  <h1 class="timelineTitle">
+    <fa-icon [icon]="faBriefcase"></fa-icon>
+    Ervaring
+  </h1>
+
+  <ul class="timeline">
+    <!-- Item 1 -->
+    <li *ngFor="let item of timelineEntries; index as i;" [class.hovered]="mouseOvered===i" (mouseout)="mouseOvered=i"
+        (mouseover)="mouseOvered=i">
+      <div class="bullet"></div>
+      <div class="pointer" [ngClass]="{'direction-r': i%2 !== 0, 'direction-l': i%2 === 0}"
+           (click)="openModal(item)">
+        <div *ngIf="i%2 === 0; then thenBlock else elseBlock"></div>
+        <ng-template #thenBlock>
+          <div class="desc">
+            <div class="title">
+              {{ item.title }}
+            </div>
+            {{ item.description }}
+          </div>
+          <div class="flag-wrapper">
+            <div class="flag">
+              <p>
+                {{ item.flag }}
+              </p>
+            </div>
+            <div class="time-wrapper">
+              <span class="time">{{ item.time }}</span>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template #elseBlock>
+          <div class="flag-wrapper">
+            <div class="flag">
+              <p>
+                {{ item.flag }}
+              </p>
+            </div>
+            <div class="time-wrapper">
+              <span class="time">{{ item.time }}</span>
+            </div>
+          </div>
+          <div class="desc">
+            <div class="title">
+              {{ item.title }}
+            </div>
+            {{ item.description }}
+          </div>
+        </ng-template>
+      </div>
+
+    </li>
+  </ul>
+</div>

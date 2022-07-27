@@ -1,0 +1,30 @@
+@import "src/styles/colors";
+
+.container {
+    .row {
+        margin: 4px 0px;
+    }
+
+    .progress {
+        background-color: $light-background;
+        height: 0.75rem;
+        border-radius: 0.5rem;
+        border: $font-color solid 1px;
+    }
+}
+
+.main-color ::ng-deep .progress-bar {
+    background: $main-color !important;
+}
+
+.main-color-dark ::ng-deep .progress-bar {
+    background: $main-color-dark !important;
+}
+
+.main-color-light ::ng-deep .progress-bar {
+    background: $main-color-light !important;
+}
+
+.main-color-light-light ::ng-deep .progress-bar {
+    background: $main-color-light-light !important;
+}

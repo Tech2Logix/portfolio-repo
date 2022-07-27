@@ -1,0 +1,66 @@
+@import "src/styles/colors";
+
+.container {
+    padding-bottom: 75px;
+    padding-top: 75px;
+    color: $font-color;
+}
+
+/* ================ The Timeline ================ */
+
+.title-container {
+    display: flex;
+    margin: 0 auto;
+    width: 833px;
+    height: 200px;
+
+    .left-container {
+        width: 75%;
+
+        .name {
+            color: $main-color;
+        }
+
+        .title {
+            color: $main-color-dark;
+        }
+    }
+
+    .right-container {
+        width: 40%;
+        text-align: right;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 150px;
+        margin-top: auto;
+
+        .mail a {
+            color: $font-color !important;
+            padding-right: 5px;
+        }
+
+        .ng-fa-icon {
+            margin-left: 5px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .title-container {
+        flex-direction: column;
+        height: 350px;
+        width: 100%;
+
+        .right-container {
+            width: 100%;
+            text-align: center;
+        }
+        .left-container {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,259 @@
+@import "src/styles/colors";
+
+// $timeline: rgba(80, 80, 80);
+// $timeline-transparant: rgba(80, 80, 80, 0);
+
+$timeline: $main-color;
+$timeline-transparant: $main-background;
+
+.container {
+    padding-bottom: 75px;
+}
+
+/* ================ The Timeline ================ */
+
+.timeline {
+    position: relative;
+    width: 833px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 1em 0;
+    list-style-type: none;
+}
+
+.timeline:before {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    content: ' ';
+    display: block;
+    width: 6px;
+    height: 100%;
+    margin-left: -3px;
+    background: $main-color-dark;
+    background: -moz-linear-gradient(top, $timeline-transparant 0%, $timeline 8%, $timeline 92%, $timeline-transparant 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(30, 87, 153, 1)), color-stop(100%, rgba(125, 185, 232, 1)));
+    background: -webkit-linear-gradient(top, $timeline-transparant 0%, $timeline 8%, $timeline 92%, $timeline-transparant 100%);
+    background: -o-linear-gradient(top, $timeline-transparant 0%, $timeline 8%, $timeline 92%, $timeline-transparant 100%);
+    background: -ms-linear-gradient(top, $timeline-transparant 0%, $timeline 8%, $timeline 92%, $timeline-transparant 100%);
+    background: linear-gradient(to bottom, $timeline-transparant 0%, $timeline 8%, $timeline 92%, $timeline-transparant 100%);
+
+    z-index: 5;
+}
+
+.timeline li {
+    padding: 1em 0;
+}
+
+.timeline li:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.direction-l {
+    display: flex;
+    position: relative;
+    width: 400px;
+    float: left;
+    text-align: right;
+    padding-top: 10px;
+    background-color: $light-background;
+    border-radius: 9px;
+    -webkit-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+}
+
+.direction-r {
+    position: relative;
+    display: flex;
+    width: 400px;
+    float: right;
+    padding-top: 10px;
+    background-color: $light-background;
+    border-radius: 9px;
+    -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+}
+
+.flag-wrapper {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    word-wrap: break-word; /* old name */
+    overflow-wrap: break-word;
+    hyphens: auto;
+    width: 35%;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.flag {
+    font-weight: 600;
+    color: $main-color;
+    text-transform: uppercase;
+    p {
+        margin-bottom: 0px;
+    }
+}
+
+.direction-r .flag:before {
+    left: -40px;
+}
+
+.time-wrapper {
+    display: inline;
+    line-height: 1em;
+    font-size: 1.25em;
+    color: $main-color-dark;
+    vertical-align: middle;
+    margin: 10px 0px;
+}
+
+.direction-l .time-wrapper {
+    float: left;
+    width: 100%;
+}
+
+.direction-r .time-wrapper {
+    width: 100%;
+    float: right;
+}
+
+.time {
+    display: inline-block;
+    padding: 4px 6px;
+}
+
+.desc {
+    margin: 0.25em 0em 0.75em;
+    font-size: 0.77777em;
+    font-style: italic;
+    line-height: 1.5em;
+    border-right: 2px solid $main-color-dark;
+    border-left: none;
+    padding-right: 1.5em;
+    padding-left: 0.5em;
+    width: 65%;
+
+    .title {
+        font-style: normal;
+        font-size: 1.5em;
+        margin-bottom: 8px;
+    }
+}
+
+.direction-r .desc {
+    margin: 0.25em 0em 0.75em;
+    border-right: none;
+    border-left: 2px solid $main-color-dark;
+    padding-left: 1.5em;
+}
+
+.bullet {
+    background: white;
+    margin-left: -10px;
+    margin-top: 20px;
+    padding: 6px;
+    position: absolute;
+    left: 50%;
+    border-radius: 21px;
+    border: 4px solid $main-color;
+    z-index: 10;
+}
+
+.hovered .bullet {
+    background-color: $main-color;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.timelineTitle {
+    margin-left: 50%;
+    width: 416px;
+    text-align: center;
+    color: $main-color-dark;
+
+    .ng-fa-icon {
+        color: $font-color;
+    }
+}
+
+/* ================ Timeline Media Queries ================ */
+// TODO
+
+@media screen and (max-width: 1000px) {
+    .pointer {
+        z-index: 10;
+    }
+
+    .timelineTitle {
+        padding-left: 0px;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .timeline {
+        width: 100%;
+        padding: 4em 0 1em 0;
+    }
+
+    .timeline li {
+        padding: 2em 0;
+    }
+
+    .direction-l,
+    .direction-r {
+        float: none;
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .flag-wrapper {
+        text-align: center;
+        width: 35%;
+    }
+
+    .flag {
+        z-index: 15;
+    }
+
+    .time-wrapper {
+        display: block;
+        position: relative;
+        z-index: 14;
+    }
+
+    .direction-l .time-wrapper {
+        float: none;
+    }
+
+    .direction-r .time-wrapper {
+        float: none;
+    }
+
+    .desc {
+        position: relative;
+        padding: 1em;
+        z-index: 15;
+        width: 65%;
+    }
+
+    .direction-l .desc,
+    .direction-r .desc {
+        position: relative;
+        padding: 1em;
+
+        z-index: 15;
+    }
+
+}
