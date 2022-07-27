@@ -3,40 +3,38 @@
     <div class="left-container">
       <div class="name">
         <h1>
-          Rhino Van Boxelaere
+          {{ 'components.titlebar.name' | translate }}
         </h1>
       </div>
       <div class="title">
         <h2>
-          Software engineer
+          {{ 'components.titlebar.title' | translate }}
         </h2>
       </div>
       <div class="description">
         <p>
-          Logica is mijn drijfveer, zo breng ik met een gerichte aanpak en een probleemoplossende gedachtegang projecten
-          succesvol
-          tot een goed einde. Ik ben betrouwbaar, creatief en vooruitstrevend, met een visie gericht naar de toekomst.
-          Ik heb een
-          sterke interesse in een combinatie van frontend en backend, met performantie en beveiliging in het
-          achterhoofd.
+          {{ 'components.titlebar.description' | translate}}
         </p>
       </div>
     </div>
     <div class="right-container">
       <div class="icon mail">
-        <a href="mailto: rhinovanboxelaere@outlook.com">rhinovanboxelaere@outlook.com</a>
+        <a href="mailto:
+          {{ 'components.titlebar.mail' | translate}}">
+          {{ 'components.titlebar.mail' | translate}}
+          </a>
         <fa-icon [icon]="faEnvelope"></fa-icon>
       </div>
       <div class="icon birthday">
-        16/05/1995
+        {{ 'components.titlebar.birthdate' | translate}}
         <fa-icon [icon]="faUser"></fa-icon>
       </div>
       <div class="icon address">
-        9255 Buggenhout
+        {{ 'components.titlebar.city' | translate}}
         <fa-icon [icon]="faHome"></fa-icon>
       </div>
       <div class="icon mobility">
-        Rijbewijs B
+        {{ 'components.titlebar.drivers-license' | translate}}
         <fa-icon [icon]="faCar"></fa-icon>
       </div>
     </div>

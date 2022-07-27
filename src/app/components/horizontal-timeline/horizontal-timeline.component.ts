@@ -1,4 +1,4 @@
-import {AfterViewInit, Component, TemplateRef} from '@angular/core';
+import {AfterViewInit, Component, Input} from '@angular/core';
 import {faCar, faGraduationCap, faSchool} from '@fortawesome/free-solid-svg-icons';
 import {MediaObserver} from '@angular/flex-layout';
 import {Subscription} from 'rxjs';
@@ -22,19 +22,14 @@ export class HorizontalTimelineComponent implements AfterViewInit {
 
   isSmallScreen = false;
 
-  timelineEntries = [{
-    title: 'Industriële Wetenschappen',
-    description: '',
-  }, {
-    title: 'Rijbewijs B',
-    description: '',
-  }, {
-    title: 'Industriële Wetenschappen',
-    description: 'Academische bachelor',
-  }, {
-    title: 'Master Industriële Wetenschappen',
-    description: 'Specialisation: ICT',
-  },];
+  @Input()
+  timelineEntries: {
+    location: string,
+    date: string,
+    title: string,
+    smallTitle: string,
+    description: string,
+  }[] = [];
 
   constructor(
     private mediaObserver: MediaObserver,
@@ -62,5 +57,17 @@ export class HorizontalTimelineComponent implements AfterViewInit {
     const modalRef = this.modalService.open(BasicModalComponent);
     modalRef.componentInstance.title = this.timelineEntries[index].title;
     modalRef.componentInstance.description = this.timelineEntries[index].description;
+  }
+
+  getClass(index: number, size: number): 'first' | 'mid' | 'end' {
+    if (index == 0) {
+      return 'first';
+    }
+
+    if (index === size) {
+      return 'end';
+    }
+
+    return 'mid';
   }
 }

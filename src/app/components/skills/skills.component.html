@@ -1,72 +1,14 @@
 <div class="container">
+  <ng-container *ngFor="let skill of skills">
     <div class="row">
       <div class="col-sm-4 text">
-        Java
+        {{skill.name}}
       </div>
       <div class="col-sm-8">
         <div class="mt-1">
-          <ngb-progressbar class="main-color-dark" [value]="90"></ngb-progressbar>
+          <ngb-progressbar class="{{skill.styleClass}}" [value]="skill.value"></ngb-progressbar>
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-sm-4 text">
-        HTML / CSS
-      </div>
-      <div class="col-sm-8">
-        <div class="mt-1">
-          <ngb-progressbar class="main-color" [value]="85"></ngb-progressbar>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-4 text">
-        Angular
-      </div>
-      <div class="col-sm-8">
-        <div class="mt-1">
-          <ngb-progressbar class="main-color-dark" [value]="80"></ngb-progressbar>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-4 text">
-        SQL
-      </div>
-      <div class="col-sm-8">
-        <div class="mt-1">
-          <ngb-progressbar class="main-color" [value]="75"></ngb-progressbar>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-4 text">
-        Javascript
-      </div>
-      <div class="col-sm-8">
-        <div class="mt-1">
-          <ngb-progressbar class="main-color" [value]="75"></ngb-progressbar>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-4 text">
-        Ember
-      </div>
-      <div class="col-sm-8">
-        <div class="mt-1">
-          <ngb-progressbar class="main-color-light" [value]="60"></ngb-progressbar>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-4 text">
-        React (Native)
-      </div>
-      <div class="col-sm-8">
-        <div class="mt-1">
-          <ngb-progressbar class="main-color-light-light" [value]="35"></ngb-progressbar>
-        </div>
-      </div>
-    </div>
+  </ng-container>
 </div>

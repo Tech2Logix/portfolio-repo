@@ -1,47 +1,50 @@
-<!--The content below is only a placeholder and can be replaced.-->
 <div class="main">
 
   <app-titlebar></app-titlebar>
-  <app-horizontal-timeline></app-horizontal-timeline>
-  <app-timeline></app-timeline>
+  <app-horizontal-timeline [timelineEntries]="horizontalTimelineEntries"></app-horizontal-timeline>
+  <app-timeline [timelineEntries]="timelineEntries"></app-timeline>
 
   <div class="row-entry">
     <h1 class="skillsTitle">
-      <fa-icon [icon]="faCog"></fa-icon> Competenties
+      <fa-icon [icon]="faCog"></fa-icon>
+      {{ 'main.competencies.title' | translate }}
     </h1>
   </div>
+
   <div class="split-container">
     <div class="left">
-      <app-skills></app-skills>
+      <app-skills [skills]="skills"></app-skills>
     </div>
+
     <div class="right text marginIfSmall">
       <p>
-
-        Frontend ben ik in aanraking gekomen met Angular, Ember en React Native. Met natuurlijk de daarbijhorende HTML/CSS
-        (Sass) stack.
+        {{ 'main.competencies.paragraph-1' | translate }}
       </p>
       <p>
-        Mijn ervaring met backend technologie spitst zich toe op Java (custom framework), gekoppeld met een SQL (MySQL/MariaDB) database setup.
+        {{ 'main.competencies.paragraph-2' | translate }}
       </p>
     </div>
   </div>
+
   <div class="row-entry" style="margin-top: 5em">
     <h1 class="preferenceTitle">
-      Interesses
+      {{ 'main.preferences.title' | translate }}
       <fa-icon [icon]="faHeart"></fa-icon>
     </h1>
   </div>
+
   <div class="split-container">
     <div class="left text">
-        <p>
-          Ik heb een sterke feeling voor performante systemen. Ik hou mezelf dan ook graag up to date met de laatste best practices en de populairdere software stacks.
-        </p>
-        <p>
-          Afwisseling is zeker mijn ding, vandaar mijn interesse in de volledige stack. Van een performante database, tot een beveiligde API, tot eye-catching frontend.
-        </p>
+      <p>
+        {{ 'main.preferences.paragraph-1' | translate }}
+      </p>
+      <p>
+        {{ 'main.preferences.paragraph-2' | translate }}
+      </p>
     </div>
+
     <div class="right">
-      <app-preferences></app-preferences>
+      <app-preferences [preferences]="preferences"></app-preferences>
     </div>
   </div>
 </div>

@@ -11,6 +11,7 @@ import {BasicModalComponent} from './basic-modal/basic-modal.component';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {RouterModule} from '@angular/router';
+import {TranslateModule} from '@ngx-translate/core';
 
 @NgModule({
   declarations: [CircleComponent, HorizontalTimelineComponent, PreferencesComponent, ProjectsComponent, SkillsComponent, TitlebarComponent, TimelineComponent, BasicModalComponent],
@@ -18,7 +19,8 @@ import {RouterModule} from '@angular/router';
     CommonModule,
     RouterModule,
     FontAwesomeModule,
-    NgbModule
+    NgbModule,
+    TranslateModule,
   ],
   exports: [CircleComponent, HorizontalTimelineComponent, PreferencesComponent, ProjectsComponent, SkillsComponent, TitlebarComponent, TimelineComponent, BasicModalComponent],
   providers: []
