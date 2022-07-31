@@ -16,14 +16,20 @@
       <app-skills [skills]="skills"></app-skills>
     </div>
 
-    <div class="right text marginIfSmall">
-      <p>
-        {{ 'main.competencies.paragraph-1' | translate }}
-      </p>
-      <p>
-        {{ 'main.competencies.paragraph-2' | translate }}
-      </p>
+    <div class="right logos marginIfSmall">
+      <div class="logo-container">
+        <ng-container *ngFor="let logo of logos">
+          <a href="{{logo.url}}"><img src="{{logo.src}}"></a>
+        </ng-container>
+      </div>
+
+      <div class="description-container">
+        <p>
+          {{ 'main.competencies.paragraph' | translate }}
+        </p>
+      </div>
     </div>
+
   </div>
 
   <div class="row-entry" style="margin-top: 5em">

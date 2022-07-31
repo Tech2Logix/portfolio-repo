@@ -1,7 +1,7 @@
 <div class="container" (mouseout)="mouseOvered=999">
   <h1 class="timelineTitle">
     <fa-icon [icon]="faBriefcase"></fa-icon>
-    Ervaring
+    {{ 'main.experience.title' | translate }}
   </h1>
 
   <ul class="timeline">
@@ -17,7 +17,7 @@
             <div class="title">
               {{ item.title }}
             </div>
-            {{ item.description }}
+            {{ getItemDescription(item) }}
           </div>
           <div class="flag-wrapper">
             <div class="flag">
@@ -45,7 +45,7 @@
             <div class="title">
               {{ item.title }}
             </div>
-            {{ item.description }}
+            {{ getItemDescription(item) }}
           </div>
         </ng-template>
       </div>

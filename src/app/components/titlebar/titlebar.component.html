@@ -18,11 +18,28 @@
       </div>
     </div>
     <div class="right-container">
+      <div class="action-container">
+        <div class="language-selector">
+          <div ngbDropdown>
+            <button type="button" class="btn btn-outline-secondary" id="languageSelector"
+                    ngbDropdownToggle>{{ 'components.titlebar.translate' | translate}}</button>
+            <div ngbDropdownMenu aria-labelledby="languageSelector">
+              <button ngbDropdownItem (click)="selectLang('en')">English</button>
+              <button ngbDropdownItem (click)="selectLang('nl')">Nederlands</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="download-container">
+          PDF
+          <fa-icon [icon]="faDownload"></fa-icon>
+        </div>
+      </div>
       <div class="icon mail">
         <a href="mailto:
           {{ 'components.titlebar.mail' | translate}}">
           {{ 'components.titlebar.mail' | translate}}
-          </a>
+        </a>
         <fa-icon [icon]="faEnvelope"></fa-icon>
       </div>
       <div class="icon birthday">

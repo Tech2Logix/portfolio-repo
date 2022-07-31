@@ -4,6 +4,7 @@ import {horizontalTimelineEntries} from 'src/assets/config/horizontal-timeline/t
 import {preferences} from 'src/assets/config/preferences/preferences.config';
 import {skills} from 'src/assets/config/skills/skills.config';
 import { timelineEntries } from 'src/assets/config/timeline/timeline.config';
+import {competences} from '../assets/config/competences/competences.config';
 
 @Component({
   selector: 'app-root',
@@ -17,4 +18,5 @@ export class AppComponent {
   timelineEntries = timelineEntries;
   horizontalTimelineEntries = horizontalTimelineEntries;
   skills = skills;
+  logos = competences;
 }

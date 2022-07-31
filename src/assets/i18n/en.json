@@ -1,17 +1,17 @@
 {
   "main": {
     "studies": {
-      "title": "Opleiding"
+      "title": "Education"
     },
     "experience": {
-      "title": "Ervaring"
+      "title": "Experience"
     },
     "competencies": {
-      "title": "Competenties",
-      "paragraph": "en (veel) meer.."
+      "title": "Competences",
+      "paragraph": "and (many) more.."
     },
     "preferences": {
-      "title": "Interesses",
+      "title": "Interests",
       "paragraph-1": "Ik heb een sterke feeling voor performante systemen. Ik hou mezelf dan ook graag up to date met de laatste best practices en de populairdere software stacks.",
       "paragraph-2": "Afwisseling is zeker mijn ding, vandaar mijn interesse in de volledige stack. Van een performante database, tot een beveiligde API, tot eye-catching frontend."
     }
@@ -24,8 +24,8 @@
       "mail": "rhinovanboxelaere@outlook.com",
       "birthdate": "16/05/1995",
       "city": "9255 Buggenhout",
-      "drivers-license": "Rijbewijs B",
-      "translate": "Taal"
+      "drivers-license": "Drivers license cat. B",
+      "translate": "Language"
     }
   }
 }
