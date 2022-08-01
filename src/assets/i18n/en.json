@@ -25,7 +25,11 @@
       "birthdate": "16/05/1995",
       "city": "9255 Buggenhout",
       "drivers-license": "Drivers license cat. B",
-      "translate": "Language"
+      "translate": "Language",
+      "toast": {
+        "title": "Did you know?",
+        "content": "The PDF that will be made available very shortly, is 100% client-sided \uD83D\uDE04. A screenshot of this webpage is taken, and will be provided to you as a download in pdf format!"
+      }
     }
   }
 }

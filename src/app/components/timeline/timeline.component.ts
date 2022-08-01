@@ -53,10 +53,10 @@ export class TimelineComponent implements OnInit {
   openModal(timelineEntry: timelineEntry): void {
     const modalRef = this.modalService.open(BasicModalComponent);
     modalRef.componentInstance.title = timelineEntry.title;
-    modalRef.componentInstance.content = timelineEntry[this.language ?? 'nl'].longDescription;
+    modalRef.componentInstance.content = timelineEntry[this.language ?? 'en'].longDescription;
   }
 
   getItemDescription(item: timelineEntry): string {
-    return item[this.language ?? 'nl'].description;
+    return item[this.language ?? 'en'].description;
   }
 }

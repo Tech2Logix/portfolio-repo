@@ -25,7 +25,11 @@
       "birthdate": "16/05/1995",
       "city": "9255 Buggenhout",
       "drivers-license": "Rijbewijs B",
-      "translate": "Taal"
+      "translate": "Taal",
+      "toast": {
+        "title": "Wist je dat?",
+        "content": "De PDF die je zometeen te downloaden krijgt, is he-le-maal client sided served \uD83D\uDE04. Er wordt gewoon een screenshot genomen van deze webpagina, en die krijg je zometeen als download in een pdf!!"
+      }
     }
   }
 }

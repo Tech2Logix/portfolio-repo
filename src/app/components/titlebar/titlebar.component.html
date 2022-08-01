@@ -1,3 +1,8 @@
+<ngb-toast header="{{'components.titlebar.toast.title' | translate}}" *ngIf="showToast" (hide)="showToast = false" [delay]=30000>
+  <!-- Content here -->
+  {{'components.titlebar.toast.content' | translate}}
+</ngb-toast>
+
 <div class="container">
   <div class="title-container">
     <div class="left-container">
@@ -30,9 +35,16 @@
           </div>
         </div>
 
-        <div class="download-container">
-          PDF
-          <fa-icon [icon]="faDownload"></fa-icon>
+        <div class="download-container" (click)="onPdfDownload()">
+          <ng-container *ngIf="!pdfRendering else loadingIcon">
+            PDF
+            <fa-icon [icon]="faDownload"></fa-icon>
+          </ng-container>
+          <ng-template #loadingIcon>
+            <div class="spinner-border">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </ng-template>
         </div>
       </div>
       <div class="icon mail">

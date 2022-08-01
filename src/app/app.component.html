@@ -1,56 +1,61 @@
 <div class="main">
 
-  <app-titlebar></app-titlebar>
-  <app-horizontal-timeline [timelineEntries]="horizontalTimelineEntries"></app-horizontal-timeline>
-  <app-timeline [timelineEntries]="timelineEntries"></app-timeline>
+  <div class="page container" id="page-1">
 
-  <div class="row-entry">
-    <h1 class="skillsTitle">
-      <fa-icon [icon]="faCog"></fa-icon>
-      {{ 'main.competencies.title' | translate }}
-    </h1>
+    <app-titlebar></app-titlebar>
+    <app-horizontal-timeline [timelineEntries]="horizontalTimelineEntries"></app-horizontal-timeline>
+    <app-timeline [timelineEntries]="timelineEntries"></app-timeline>
   </div>
 
-  <div class="split-container">
-    <div class="left">
-      <app-skills [skills]="skills"></app-skills>
+  <div class="page container" id="page-2">
+    <div class="row-entry">
+      <h1 class="skillsTitle">
+        <fa-icon [icon]="faCog"></fa-icon>
+        {{ 'main.competencies.title' | translate }}
+      </h1>
     </div>
 
-    <div class="right logos marginIfSmall">
-      <div class="logo-container">
-        <ng-container *ngFor="let logo of logos">
-          <a href="{{logo.url}}"><img src="{{logo.src}}"></a>
-        </ng-container>
+    <div class="split-container">
+      <div class="left">
+        <app-skills [skills]="skills"></app-skills>
       </div>
 
-      <div class="description-container">
+      <div class="right logos marginIfSmall">
+        <div class="logo-container">
+          <ng-container *ngFor="let logo of logos">
+            <a href="{{logo.url}}" target="_blank"><img src="{{logo.src}}"></a>
+          </ng-container>
+        </div>
+
+        <div class="description-container">
+          <p>
+            {{ 'main.competencies.paragraph' | translate }}
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row-entry" style="margin-top: 5em">
+      <h1 class="preferenceTitle">
+        {{ 'main.preferences.title' | translate }}
+        <fa-icon [icon]="faHeart"></fa-icon>
+      </h1>
+    </div>
+
+    <div class="split-container">
+      <div class="left text">
         <p>
-          {{ 'main.competencies.paragraph' | translate }}
+          {{ 'main.preferences.paragraph-1' | translate }}
+        </p>
+        <p>
+          {{ 'main.preferences.paragraph-2' | translate }}
         </p>
       </div>
-    </div>
 
-  </div>
-
-  <div class="row-entry" style="margin-top: 5em">
-    <h1 class="preferenceTitle">
-      {{ 'main.preferences.title' | translate }}
-      <fa-icon [icon]="faHeart"></fa-icon>
-    </h1>
-  </div>
-
-  <div class="split-container">
-    <div class="left text">
-      <p>
-        {{ 'main.preferences.paragraph-1' | translate }}
-      </p>
-      <p>
-        {{ 'main.preferences.paragraph-2' | translate }}
-      </p>
-    </div>
-
-    <div class="right">
-      <app-preferences [preferences]="preferences"></app-preferences>
+      <div class="right">
+        <app-preferences [preferences]="preferences"></app-preferences>
+      </div>
     </div>
   </div>
 </div>

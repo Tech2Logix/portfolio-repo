@@ -4,6 +4,15 @@
   background-color: $main-background;
   padding-bottom: 15em;
 
+  #page-1 {
+    padding-bottom: -75px;
+  }
+
+  #page-2 {
+    padding-bottom: 150px;
+    padding-top: 75px;
+  }
+
   .split-container {
     width: 833px;
     margin: auto;
