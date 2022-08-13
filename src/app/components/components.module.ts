@@ -12,9 +12,10 @@ import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {RouterModule} from '@angular/router';
 import {TranslateModule} from '@ngx-translate/core';
+import {ProjectModalComponent} from './project-modal/project-modal.component';
 
 @NgModule({
-  declarations: [CircleComponent, HorizontalTimelineComponent, PreferencesComponent, ProjectsComponent, SkillsComponent, TitlebarComponent, TimelineComponent, BasicModalComponent],
+  declarations: [CircleComponent, HorizontalTimelineComponent, PreferencesComponent, ProjectsComponent, SkillsComponent, TitlebarComponent, TimelineComponent, BasicModalComponent, ProjectModalComponent],
   imports: [
     CommonModule,
     RouterModule,
@@ -22,7 +23,7 @@ import {TranslateModule} from '@ngx-translate/core';
     NgbModule,
     TranslateModule,
   ],
-  exports: [CircleComponent, HorizontalTimelineComponent, PreferencesComponent, ProjectsComponent, SkillsComponent, TitlebarComponent, TimelineComponent, BasicModalComponent],
+  exports: [CircleComponent, HorizontalTimelineComponent, PreferencesComponent, ProjectsComponent, SkillsComponent, TitlebarComponent, TimelineComponent, BasicModalComponent, ProjectModalComponent],
   providers: []
 
 })

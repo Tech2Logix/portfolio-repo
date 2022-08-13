@@ -1,4 +1,5 @@
 import {Component, Input} from '@angular/core';
+import {Preference} from '../../../assets/config/preferences/preferences.config';
 
 @Component({
   selector: 'app-preferences',
@@ -8,12 +9,7 @@ import {Component, Input} from '@angular/core';
 export class PreferencesComponent {
 
   @Input()
-  preferences: {
-    value: number,
-    color: string,
-    name: string,
-    fontSize: number,
-  }[] = [];
+  preferences: Preference[] = [];
 
   // support up to 7 balloons/preferences!
   readonly paddingLocations = [

@@ -1,0 +1,47 @@
+<div class="modal-header">
+  <h4 class="modal-title pull-left">{{ 'main.projects.modal.project-name' | translate }}: {{ title }}</h4>
+  <button type="button" class="close pull-right" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <div class="row">
+    <img src="{{ src }}" class="img-responsive" alt="{{ title }}">
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 fw-bold">
+      {{ 'main.projects.modal.company' | translate }}
+    </div>
+    <div class="col-md-8">
+      {{ company }}
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 fw-bold">
+      {{ 'main.projects.modal.role' | translate }}
+    </div>
+    <div class="col-md-8">
+      {{ role }}
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 fw-bold">
+      {{ 'main.projects.modal.technology' | translate }}
+    </div>
+    <div class="col-md-8">
+      {{ technology }}
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 fw-bold">
+      {{ 'main.projects.modal.description' | translate }}
+    </div>
+    <div class="col-md-8">
+      {{ description }}
+    </div>
+  </div>
+</div>

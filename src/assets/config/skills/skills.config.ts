@@ -1,4 +1,10 @@
-export const skills = [
+export interface Skill {
+  name: string;
+  styleClass: string;
+  value: number;
+}
+
+export const skills: Skill[] = [
   {
     name: 'Java/Spring',
     styleClass: 'main-color-dark',

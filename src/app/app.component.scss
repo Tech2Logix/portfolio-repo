@@ -58,10 +58,6 @@
     color: $main-color-dark;
     margin-bottom: 0.5em;
     margin-top: 0.5em;
-
-    .ng-fa-icon {
-      color: $font-color;
-    }
   }
 
   .skillsTitle {
@@ -72,6 +68,13 @@
     .ng-fa-icon {
       color: $font-color;
     }
+  }
+
+  .projectsTitle {
+    text-align: center;
+    color: $main-color-dark;
+    margin-bottom: 0.5em;
+    margin-top: 1.5em;
   }
 }
 

@@ -1,4 +1,5 @@
 import {Component, Input} from '@angular/core';
+import {Skill} from '../../../assets/config/skills/skills.config';
 
 @Component({
   selector: 'app-skills',
@@ -8,9 +9,5 @@ import {Component, Input} from '@angular/core';
 export class SkillsComponent {
 
   @Input()
-  skills: {
-    name: string,
-    styleClass: string,
-    value: number
-  }[] = [];
+  skills: Skill[] = [];
 }

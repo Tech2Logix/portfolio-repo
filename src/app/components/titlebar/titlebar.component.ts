@@ -84,10 +84,10 @@ export class TitlebarComponent {
 
     const ratio = imgProps.height / imgProps.width;
 
-    const imageHeight = (doc.internal.pageSize.getWidth() + 100) * ratio;
+    const imageHeight = (doc.internal.pageSize.getWidth()) * ratio;
 
     // Add image Canvas to PDF
-    doc.addImage(img, 'PNG', -50, 0, doc.internal.pageSize.getWidth() + 100, imageHeight, undefined, 'FAST');
+    doc.addImage(img, 'PNG', 0, 0, doc.internal.pageSize.getWidth(), imageHeight, undefined, 'FAST');
   }
 
   private downloadPdf(doc: jsPDF): void {

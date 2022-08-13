@@ -1,4 +1,18 @@
-export const timelineEntries = [
+export interface TimelineEntry {
+  flag: string;
+  title: string;
+  time: string;
+  nl: {
+    description: string;
+    longDescription: string;
+  },
+  en: {
+    description: string;
+    longDescription: string;
+  }
+}
+
+export const timelineEntries: TimelineEntry[] = [
   {
     flag: 'Software Engineer',
     time: '2017 - X',

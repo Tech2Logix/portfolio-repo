@@ -1,9 +1,10 @@
 import {AfterViewInit, Component, Input} from '@angular/core';
-import {faCar, faGraduationCap, faSchool} from '@fortawesome/free-solid-svg-icons';
+import {faGraduationCap, faSchool} from '@fortawesome/free-solid-svg-icons';
 import {MediaObserver} from '@angular/flex-layout';
 import {Subscription} from 'rxjs';
 import {BasicModalComponent} from '../basic-modal/basic-modal.component';
 import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
+import {HorizontalTimelineEntry} from '../../../assets/config/horizontal-timeline/timeline.config';
 
 @Component({
   selector: 'app-horizontal-timeline',
@@ -13,7 +14,7 @@ import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
 export class HorizontalTimelineComponent implements AfterViewInit {
   faGraduationCap = faGraduationCap;
   faSchool = faSchool;
-  faCar = faCar;
+
   // Subscription of the observer of the screen size
   mediaQuery$: Subscription | null = null;
 
@@ -23,13 +24,7 @@ export class HorizontalTimelineComponent implements AfterViewInit {
   isSmallScreen = false;
 
   @Input()
-  timelineEntries: {
-    location: string,
-    date: string,
-    title: string,
-    smallTitle: string,
-    description: string,
-  }[] = [];
+  timelineEntries: HorizontalTimelineEntry[] = [];
 
   constructor(
     private mediaObserver: MediaObserver,

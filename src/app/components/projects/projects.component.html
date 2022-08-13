@@ -1,3 +1,7 @@
-<p>
-  projects works!
-</p>
+<div class="projects-container">
+  <ng-container *ngFor="let project of projects">
+    <div class="project-component">
+      <img src="{{project.src}}" alt="{{project.title}}" class="project-image" (click)="openModal(project)">
+    </div>
+  </ng-container>
+</div>

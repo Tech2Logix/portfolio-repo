@@ -1,4 +1,11 @@
-export const preferences = [
+export interface Preference {
+  value: number;
+  color: string;
+  name: string;
+  fontSize: number;
+}
+
+export const preferences: Preference[] = [
   {
     value: 200,
     color: 'rgba(4,124,124,0.8)',

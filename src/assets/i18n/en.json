@@ -10,6 +10,16 @@
       "title": "Competences",
       "paragraph": "and (many) more.."
     },
+    "projects": {
+      "title": "Projects",
+      "modal": {
+        "project-name": "Project name",
+        "company": "Company",
+        "role": "Role",
+        "technology": "Technology",
+        "description": "Description"
+      }
+    },
     "preferences": {
       "title": "Interests",
       "paragraph-1": "Ik heb een sterke feeling voor performante systemen. Ik hou mezelf dan ook graag up to date met de laatste best practices en de populairdere software stacks.",

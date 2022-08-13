@@ -1,49 +1,34 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input} from '@angular/core';
+import {Project} from '../../../assets/config/projects/projects.config';
+import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
+import {TranslateService} from '@ngx-translate/core';
+import {ProjectModalComponent} from '../project-modal/project-modal.component';
 
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss']
 })
-export class ProjectsComponent implements OnInit {
-  timelineEntries = [{
-    title: 'Forganiser',
-    company: 'Lemon Companies',
-    function: 'Lead developer (fullstack)',
-    description: 'Forganiser is een SaaS personeelsplanning tool. Stel snel en eenvoudig je planning op, zodat je focus kan liggen op resultaten in plaats van planningen.',
-    techonology: 'SaaS: Ember - Java - MySQL. App: React',
-    url: 'https://www.forganiser.be/',
-    img: 'https://i.imgur.com/2EgR6bE.png'
-  }, {
-    title: 'Het Land Van Ooit',
-    company: 'Lemon Companies',
-    function: 'Developer (fullstack)',
-    description: 'Het Land Van Ooit is een winkelketen voor de kleintjes. Dit project bestaat uit meerdere delen: enterprise resource planning (ERP), kassa systeem en webshop.',
-    techonology: 'Backend: Java - MySQL. ERP: Ember, webshop en kassa: Angular',
-    url: 'https://www.hetlandvanooit.be/',
-    img: 'https://www.hetlandvanooit.be/assets/img/top_logo.png'
-  }, {
-    title: 'Moonshine',
-    company: 'Lemon Companies',
-    function: 'Lead developer (frontend)',
-    description: 'Moonshine is een platform voor het visualiseren en managen van al je digitale currencies over verschillende platformen. Een gedetailleerde weergave van je cryptocurrency portfolio.',
-    techonology: 'Frontend: Angular',
-    url: 'https://www.moonshine.trading/',
-    img: 'https://i.imgur.com/1XHXNFu.png'
-  }, {
-    title: 'Samana',
-    company: 'Lemon Companies',
-    function: 'Developer (fullstack)',
-    description: 'Het Samana (blijven reizen) .',
-    techonology: 'SaaS: Ember - Java - MySQL',
-    url: 'https://www.moonshine.trading/',
-    img: 'https://i.imgur.com/1XHXNFu.png'
-  },];
+export class ProjectsComponent {
+  @Input()
+  projects: Project[] = [];
 
-  constructor() {
+  constructor(private modalService: NgbModal,
+              private translate: TranslateService) {
   }
 
-  ngOnInit() {
-  }
+  openModal(project: Project): void {
+    const modalRef = this.modalService.open(ProjectModalComponent);
+    modalRef.componentInstance.src = project.src;
+    modalRef.componentInstance.title = project.title;
+    modalRef.componentInstance.company = project.company;
+    modalRef.componentInstance.role = project.role;
+    modalRef.componentInstance.technology = project.technology;
 
+    if (this.translate.currentLang === 'nl') {
+      modalRef.componentInstance.description = project.descriptionNl;
+    } else {
+      modalRef.componentInstance.description = project.descriptionEn;
+    }
+  }
 }

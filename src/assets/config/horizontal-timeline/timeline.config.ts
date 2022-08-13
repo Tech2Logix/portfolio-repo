@@ -1,4 +1,12 @@
-export const horizontalTimelineEntries = [
+export interface HorizontalTimelineEntry {
+  location: string;
+  date: string;
+  title: string;
+  smallTitle: string;
+  description: string;
+}
+
+export const horizontalTimelineEntries: HorizontalTimelineEntry[] = [
   {
     location: 'GTSM @ Merchtem',
     date: 'June 2013',

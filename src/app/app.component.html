@@ -33,7 +33,20 @@
           </p>
         </div>
       </div>
+    </div>
 
+
+    <div class="row-entry">
+      <h1 class="projectsTitle">
+        <fa-icon [icon]="faHandsHoldingCircle"></fa-icon>
+        {{ 'main.projects.title' | translate }}
+      </h1>
+    </div>
+
+    <div class="split-container">
+      <div class="center">
+        <app-projects [projects]="projects"></app-projects>
+      </div>
     </div>
 
     <div class="row-entry" style="margin-top: 5em">
