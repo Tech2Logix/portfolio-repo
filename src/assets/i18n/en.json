@@ -22,15 +22,15 @@
     },
     "preferences": {
       "title": "Interests",
-      "paragraph-1": "Ik heb een sterke feeling voor performante systemen. Ik hou mezelf dan ook graag up to date met de laatste best practices en de populairdere software stacks.",
-      "paragraph-2": "Afwisseling is zeker mijn ding, vandaar mijn interesse in de volledige stack. Van een performante database, tot een beveiligde API, tot eye-catching frontend."
+      "paragraph-1": "I love variety. I love to switch between front-end and back-end, but also to experience challenging problems. I'm comfortable with a wide range of stacks, as a real full-stack developer, including a DevOps part. Though my preference is starting to grow a little towards back-end \uD83D\uDE09",
+      "paragraph-2": "I'm not a fan of quick & dirty solutions, give me systems where performance, security and stability are key essentials. I'm a big supporter of clean code, best practices but also forward-thinking technologies. To build a stable and expandable ecosystems (in the ideal world)!"
     }
   },
   "components": {
     "titlebar": {
       "name": "Rhino van Boxelaere",
       "title": "Software Engineer",
-      "description": "Logica is mijn drijfveer, zo breng ik met een gerichte aanpak en een probleemoplossende gedachtegang projecten succesvol tot een goed einde. Ik ben betrouwbaar, creatief en vooruitstrevend, met een visie gericht naar de toekomst. Ik heb een sterke interesse in een combinatie van frontend en backend, met performantie en beveiliging in het achterhoofd.",
+      "description": "Logic is my backbone, to bring project to a good end with a strong and forward-thinking mindset. I am dependable, creative and down-to-earth, with a clear vision towards the future. My door is always open to spar over any problem, thought-chain or technology! (or anything, really)",
       "mail": "rhinovanboxelaere@outlook.com",
       "birthdate": "16/05/1995",
       "city": "9255 Buggenhout",

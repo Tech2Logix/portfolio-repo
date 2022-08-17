@@ -26,7 +26,8 @@ export const timelineEntries: TimelineEntry[] = [
       <br/><h5>Database:</h5><ul> <li>SQL (MySQL/MariaDB/IMBI)</li></ul>
       <br/><h5>Architectural:</h5><ul> <li>TDD</li><li>Hexagonal design</li><li>Unit & Integration testing</li></ul>
       <br/><h5>Identity providers:</h5><ul> <li>Keycloak</li><li>Amazon Cognito</li></ul>
-      <br/><h5>DevOps:</h5><ul> <li>Gitlab CI/CD</li><li>Docker</li></ul>`,
+      <br/><h5>DevOps:</h5><ul> <li>Gitlab CI/CD</li><li>Docker</li></ul>
+      <br/><b>En nog (veeL) meer...</b>`,
     },
     en: {
       description: `Lemon provided me with my first job. As a start-up Lemon provided me with a wide variety of projects. I had the opportunity to pick my poison in regards to challenges.`,
@@ -37,7 +38,8 @@ export const timelineEntries: TimelineEntry[] = [
       <br/><h5>Database:</h5><ul> <li>SQL (MySQL/MariaDB/IMBI)</li></ul>
       <br/><h5>Architectural:</h5><ul> <li>TDD</li><li>Hexagonal design</li><li>Unit & Integration testing</li></ul>
       <br/><h5>Identity providers:</h5><ul> <li>Keycloak</li><li>Amazon Cognito</li></ul>
-      <br/><h5>DevOps:</h5><ul> <li>Gitlab CI/CD</li><li>Docker</li></ul>`,
+      <br/><h5>DevOps:</h5><ul> <li>Gitlab CI/CD</li><li>Docker</li></ul>
+      <br/><b>And (many) more...</b>`,
     }
   }, {
     flag: 'Master Thesis',

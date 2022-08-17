@@ -1,4 +1,4 @@
-<div class="container">
+<div class="preference-container">
   <ng-container *ngFor="let pref of preferences; let index = index">
     <div style="position: absolute;padding-left:{{paddingLocations[index][0]}}em;padding-top: {{paddingLocations[index][1]}}em;">
       <circle size="{{pref.value}}" color="{{pref.color}}" label="{{pref.name}}" fontSize="{{pref.fontSize}}"></circle>

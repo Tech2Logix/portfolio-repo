@@ -18,13 +18,13 @@ export const horizontalTimelineEntries: HorizontalTimelineEntry[] = [
     date: 'August 2013',
     title: 'Drivers License cat. B',
     smallTitle: '',
-    description: 'Achieved my drivers license cat. B',
+    description: 'Drivers license @ age of 18 - cat. B',
   }, {
     location: 'KuLeuven, campus Gent',
     date: '2013 - 2016',
     title: 'Master of Science',
     smallTitle: 'Academic bachelor',
-    description: 'Studied at KuLeuven in order to gradatue in Master of Science bachelor.',
+    description: 'Studied at KuLeuven in order to graduate in Master of Science bachelor.',
   }, {
     location: 'KuLeuven, campus Gent',
     date: 'June 2017',

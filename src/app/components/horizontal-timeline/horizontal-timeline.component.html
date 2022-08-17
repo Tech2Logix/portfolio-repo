@@ -1,6 +1,6 @@
 <!-- This component only supports up 4 entries on this timeline. More mess up the styling. -->
 
-<div class="container">
+<div class="h-timeline-container">
   <h1 class="timelineTitle">
     <fa-icon [icon]="faGraduationCap"></fa-icon>
     {{ 'main.studies.title' | translate }}
@@ -28,7 +28,7 @@
                 {{ entry.smallTitle }}
               </div>
             </div>
-            <div class="title" *ngIf="isSmallScreen" (click)="openModal(0)">
+            <div class="title" *ngIf="isSmallScreen" (click)="openModal(index)">
               <fa-icon [icon]="faSchool"></fa-icon>
             </div>
           </div>
@@ -43,7 +43,7 @@
               {{ entry.smallTitle }}
             </div>
           </div>
-          <div class="title" *ngIf="isSmallScreen" (click)="openModal(1)">
+          <div class="title" *ngIf="isSmallScreen" (click)="openModal(index)">
             <fa-icon [icon]="faSchool"></fa-icon>
           </div>
         </div>

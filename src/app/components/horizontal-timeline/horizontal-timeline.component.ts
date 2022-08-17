@@ -51,7 +51,7 @@ export class HorizontalTimelineComponent implements AfterViewInit {
   openModal(index: number) {
     const modalRef = this.modalService.open(BasicModalComponent);
     modalRef.componentInstance.title = this.timelineEntries[index].title;
-    modalRef.componentInstance.description = this.timelineEntries[index].description;
+    modalRef.componentInstance.content = this.timelineEntries[index].description;
   }
 
   getClass(index: number, size: number): 'first' | 'mid' | 'end' {

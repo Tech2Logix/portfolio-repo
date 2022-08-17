@@ -1,118 +1,134 @@
 @import "src/styles/colors";
 
-.container {
-    padding-bottom: 75px;
-    color: $font-color;
-    overflow-wrap: break-word;
+.h-timeline-container {
+  padding-bottom: 75px;
+  color: $font-color;
+  overflow-wrap: break-word;
 }
 
 .timeline {
-    position: relative;
-    width: 833px;
-    margin: 0 auto;
-    margin-top: 20px;
-    height: 150px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
+  position: relative;
+  width: 833px;
+  margin: 0 auto;
+  margin-top: 20px;
+  height: 150px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 
 .timelineLine {
-    position: absolute;
-    height: 5px;
-    background: $main-color;
-    margin-top: 75px;
-    width: 100%;
+  position: absolute;
+  height: 5px;
+  background: $main-color;
+  margin-top: 75px;
+  width: 100%;
 }
 
 .timelineTitle {
-    padding-right: 400px;
-    width: 833px;
-    margin: auto;
-    color: $main-color-dark;
+  padding-right: 400px;
+  width: 833px;
+  margin: auto;
+  color: $main-color-dark;
 
-    .ng-fa-icon {
-        color: $font-color;
-    }
+  .ng-fa-icon {
+    color: $font-color;
+  }
 }
 
 .first,
 .mid,
 .end {
-    width: 25%;
+  width: 25%;
 }
 
 .top {
-    position: absolute;
-    bottom: 85px;
-    width: 25%;
+  position: absolute;
+  bottom: 85px;
+  width: 25%;
 }
 
 .bottom {
-    width: 25%;
-    height: 40%;
-    bottom: 0px;
-    text-align: center;
-    position: absolute;
+  width: 25%;
+  height: 40%;
+  bottom: 0px;
+  text-align: center;
+  position: absolute;
 }
 
 .triangleUp {
-    width: 0;
-    height: 0;
-    border-style: solid;
-    margin-left: auto;
-    margin-top: 80px;
-    margin-right: auto;
-    border-width: 0 5px 8.7px 5px;
-    border-color: transparent transparent $main-color transparent;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  margin-left: auto;
+  margin-top: 80px;
+  margin-right: auto;
+  border-width: 0 5px 8.7px 5px;
+  border-color: transparent transparent $main-color transparent;
 }
 
 .triangleDown {
-    width: 0;
-    height: 0;
-    margin-left: auto;
-    margin-top: 66px;
-    margin-right: auto;
-    border-style: solid;
-    border-width: 8.7px 5px 0 5px;
-    border-color: $main-color transparent transparent transparent;
+  width: 0;
+  height: 0;
+  margin-left: auto;
+  margin-top: 66px;
+  margin-right: auto;
+  border-style: solid;
+  border-width: 8.7px 5px 0 5px;
+  border-color: $main-color transparent transparent transparent;
 }
 
 .title {
-    background: $main-color-light;
-    padding: 5px;
-    color: white;
-    border-radius: 15px;
-    margin: 10px 25px;
-    font-weight: bold;
+  background: $main-color-light;
+  padding: 5px;
+  color: white;
+  border-radius: 15px;
+  margin: 10px 25px;
+  font-weight: bold;
 }
 
 .date {
-    color: $font-second-color;
+  color: $font-second-color;
 }
 
 .modal-header {
-    border-bottom: none;
-    padding-bottom: 0;
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
 .modal-header {
-    padding-top: 0.5rem;
+  padding-top: 0.5rem;
 }
 
 /* ================ Timeline Media Queries ================ */
-// TODO
 
 @media screen and (max-width: 1000px) {
-    .timelineTitle {
+  // ng-deep is deprecated, but there's no clean alternative. See readme for details.
+  ::ng-deep {
+    .main {
+      .timelineTitle {
         width: 100%;
         padding-right: 0px;
         text-align: center;
         margin-bottom: 1.25em;
         margin-top: 0.75em;
-    }
+      }
 
-    .timeline {
+      .timeline {
         width: 100%;
+      }
+
+      .timelineLine {
+        margin-top: 15px;
+      }
+
+      .triangleDown {
+        margin-top: 8px;
+      }
+
+      .triangleUp {
+        margin-top: 18px;
+      }
     }
+  }
 }

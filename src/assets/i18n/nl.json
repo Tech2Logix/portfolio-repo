@@ -22,15 +22,15 @@
     },
     "preferences": {
       "title": "Interesses",
-      "paragraph-1": "Ik heb een sterke feeling voor performante systemen. Ik hou mezelf dan ook graag up to date met de laatste best practices en de populairdere software stacks.",
-      "paragraph-2": "Afwisseling is zeker mijn ding, vandaar mijn interesse in de volledige stack. Van een performante database, tot een beveiligde API, tot eye-catching frontend."
+      "paragraph-1": "Ik hou van afwisseling, maar tegelijk ook van uitdagende problemen. Ik ben een beetje van alle markten thuis, een echte full-stack developer dus, inclusief een deeltje DevOps. Hoewel mijn voorkeur zeer lichtjes begint te groeien richting back-end \uD83D\uDE09",
+      "paragraph-2": "Ik ben geen fan van quick & dirty oplossingen, geef mij maar systemen waar performantie, security én stabiliteit centraal staan. Ik ben een grote voorstander van clean code, best practices maar tegelijkertijd ook vooruitstrevende technieken. Een systeem waar met een gerust hart verder op kan gebouwd worden (in de ideale wereld)!"
     }
   },
   "components": {
     "titlebar": {
       "name": "Rhino van Boxelaere",
       "title": "Software Engineer",
-      "description": "Logica is mijn drijfveer, zo breng ik met een gerichte aanpak en een probleemoplossende gedachtegang projecten succesvol tot een goed einde. Ik ben betrouwbaar, creatief en vooruitstrevend, met een visie gericht naar de toekomst. Ik heb een sterke interesse in een combinatie van frontend en backend, met performantie en beveiliging in het achterhoofd.",
+      "description": "Logica is mijn ruggengraat, met een gerichte en vooruitstrevende gedachtegang projecten tot een goed einde brengen. Ik ben betrouwbaar, creatief en down-to-earth, met een visie gericht naar de toekomst. Mijn deur staat altijd open om eens te sparren over een probleem, gedachtegang of technologie! (of eender wat, you name it)",
       "mail": "rhinovanboxelaere@outlook.com",
       "birthdate": "16/05/1995",
       "city": "9255 Buggenhout",

@@ -3,6 +3,9 @@
 .main {
   background-color: $main-background;
   padding-bottom: 15em;
+}
+
+.page-container {
 
   #page-1 {
     padding-bottom: -75px;
@@ -27,6 +30,7 @@
 
       .logo-container {
         text-align: center;
+
         img {
           margin: auto;
           padding: 2px 8px;
@@ -52,64 +56,69 @@
     text-justify: inter-word;
   }
 
-  .preferenceTitle {
-    text-align: right;
-    width: 833px;
-    color: $main-color-dark;
-    margin-bottom: 0.5em;
-    margin-top: 0.5em;
-  }
 
-  .skillsTitle {
-    width: 833px;
+  .title {
     color: $main-color-dark;
-    margin-bottom: 0.5em;
 
     .ng-fa-icon {
       color: $font-color;
     }
-  }
 
-  .projectsTitle {
-    text-align: center;
-    color: $main-color-dark;
-    margin-bottom: 0.5em;
-    margin-top: 1.5em;
+    &.projectsTitle {
+      text-align: center;
+      margin-bottom: 0.5em;
+      margin-top: 1.5em;
+    }
+
+    &.skillsTitle {
+      width: 833px;
+      margin-bottom: 0.5em;
+    }
+
+    &.preferenceTitle {
+      text-align: right;
+      width: 833px;
+      margin-bottom: 0.5em;
+      margin-top: 0.5em;
+    }
   }
 }
 
-
 @media screen and (max-width: 1000px) {
-  .main {
-    padding-bottom: 25em;
-  }
-  .row-entry {
-    width: 100% !important;
-  }
+  // ng-deep is deprecated, but there's no clean alternative. See readme for details.
+  ::ng-deep {
+    .main {
+      padding-bottom: 25em;
+
+      .row-entry {
+        width: 100% !important;
+      }
 
 
-  .marginIfSmall {
-    margin-top: 2em !important;
-  }
+      .marginIfSmall {
+        margin-top: 2em !important;
+      }
 
-  .preferenceTitle,
-  .skillsTitle {
-    text-align: center !important;
-    width: 100% !important;
-  }
+      .preferenceTitle,
+      .skillsTitle {
+        text-align: center !important;
+        width: 100% !important;
+      }
 
-  .split-container {
-    width: 100% !important;
-    flex-direction: column !important;
+      .split-container {
+        width: 100% !important;
+        flex-direction: column !important;
 
-    .left {
-      width: 100% !important;
-      padding: 0px 40px;
-    }
+        .left {
+          width: 100% !important;
+          padding: 0px 40px;
+        }
 
-    .right {
-      width: 100% !important;
-      padding: 0px 40px;
+        .right {
+          width: 100% !important;
+          padding: 0px 40px;
+        }
+      }
     }
   }
 }

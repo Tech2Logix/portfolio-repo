@@ -1,6 +1,6 @@
 @import "src/styles/colors";
 
-.container {
+.titlebar-container {
   padding-bottom: 75px;
   padding-top: 75px;
   color: $font-color;
@@ -32,6 +32,10 @@
 
     .title {
       color: $main-color-dark;
+    }
+
+    .description {
+      text-align: justify;
     }
   }
 
@@ -69,6 +73,7 @@
         padding: 6px 8px;
         border-radius: 4px;
         text-align: center;
+
         .spinner-border {
           width: 20px;
           height: 20px;
@@ -85,25 +90,31 @@
 
 
 @media screen and (max-width: 1000px) {
-  .title-container {
-    flex-direction: column;
-    height: 350px;
-    width: 100%;
+  // ng-deep is deprecated, but there's no clean alternative. See readme for details.
+  ::ng-deep {
+    .main {
+      .title-container {
+        flex-direction: column;
+        height: 350px;
+        width: 100%;
 
-    .right-container {
-      width: 100%;
-      text-align: center;
+        // !important is needed here due to the setup with ng-deep. Definitely a code smell.
+        .right-container {
+          width: 100% !important;
+          text-align: center !important;
 
-      .action-container {
-        margin-top: 0px;
-        margin-right: auto;
-        margin-bottom: 8px;
+          .action-container {
+            margin-top: 0px !important;
+            margin-right: auto !important;
+            margin-bottom: 8px !important;
+          }
+        }
+
+        .left-container {
+          width: 100% !important;
+          text-align: center;
+        }
       }
-    }
-
-    .left-container {
-      width: 100%;
-      text-align: center;
     }
   }
 }
