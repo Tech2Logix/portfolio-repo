@@ -69,9 +69,16 @@
           </p>
         </div>
 
-        <div class="right">
+        <div class="right preferences-scale-on-resize">
           <app-preferences [preferences]="preferences"></app-preferences>
         </div>
+      </div>
+
+      <div class="row-entry github-container">
+        <p>
+          {{'main.github.description' | translate}}
+        </p>
+        <a href="{{'main.github.link' | translate}}" target="_blank">{{'main.github.link' | translate}}</a>
       </div>
     </div>
   </div>

@@ -6,6 +6,7 @@
 }
 
 .page-container {
+  margin-inline: 5%;
 
   #page-1 {
     padding-bottom: -75px;
@@ -82,6 +83,17 @@
       margin-top: 0.5em;
     }
   }
+
+  .github-container {
+    margin-top: 4em;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    a {
+      margin-left: 0.5em;
+      min-width: 275px;
+    }
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -119,6 +131,50 @@
           padding: 0px 40px;
         }
       }
+
+      .github-container {
+        flex-direction: column;
+        p, a {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  // ng-deep is deprecated, but there's no clean alternative. See readme for details.
+  ::ng-deep {
+    .main {
+      .preferences-scale-on-resize {
+        transform: scale(0.7);
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  // ng-deep is deprecated, but there's no clean alternative. See readme for details.
+  ::ng-deep {
+    .main {
+      .preferences-scale-on-resize {
+        transform: scale(0.6);
+        margin-left: -25%;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 350px) {
+  // ng-deep is deprecated, but there's no clean alternative. See readme for details.
+  ::ng-deep {
+    .main {
+        .preferences-scale-on-resize {
+          transform: scale(0.5);
+          margin-left: -25%;
+        }
     }
   }
 }

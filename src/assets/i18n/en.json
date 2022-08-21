@@ -23,22 +23,26 @@
     "preferences": {
       "title": "Interests",
       "paragraph-1": "I love variety. I love to switch between front-end and back-end, but also to experience challenging problems. I'm comfortable with a wide range of stacks, as a real full-stack developer, including a DevOps part. Though my preference is starting to grow a little towards back-end \uD83D\uDE09",
-      "paragraph-2": "I'm not a fan of quick & dirty solutions, give me systems where performance, security and stability are key essentials. I'm a big supporter of clean code, best practices but also forward-thinking technologies. To build a stable and expandable ecosystems (in the ideal world)!"
+      "paragraph-2": "I'm not a fan of quick & dirty solutions, give me systems where performance, security and stability are key essentials. I'm a big supporter of clean code, best practices but also forward-thinking technologies. To build a stable and expandable ecosystems! (in a perfect world)"
+    },
+    "github": {
+      "description": "Want to take a look at the source code of this project? Check it out here:",
+      "link": "https://github.com/Tech2Logix/portfolio-repo"
     }
   },
   "components": {
     "titlebar": {
       "name": "Rhino van Boxelaere",
       "title": "Software Engineer",
-      "description": "Logic is my backbone, to bring project to a good end with a strong and forward-thinking mindset. I am dependable, creative and down-to-earth, with a clear vision towards the future. My door is always open to spar over any problem, thought-chain or technology! (or anything, really)",
-      "mail": "rhinovanboxelaere@outlook.com",
+      "description": "Logic is my core, to bring project to a good end with a strong and forward-thinking mindset. I am dependable, creative and down-to-earth, with a clear vision towards the future. Want to spar over challenging problems, ideas or technologies (or anything, really)? Shoot me a message!",
+      "mail": "contact@rhino-vb.be",
       "birthdate": "16/05/1995",
       "city": "9255 Buggenhout",
       "drivers-license": "Drivers license cat. B",
       "translate": "Language",
       "toast": {
         "title": "Did you know?",
-        "content": "The PDF that will be made available very shortly, is 100% client-sided \uD83D\uDE04. A screenshot of this webpage is taken, and will be provided to you as a download in pdf format!"
+        "content": "Your PDF will be available shortly! It is being client-side rendered, more info? Check the GitHub readme! If any issues occur, please contact me."
       }
     }
   }

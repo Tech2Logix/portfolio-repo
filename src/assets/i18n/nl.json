@@ -23,22 +23,26 @@
     "preferences": {
       "title": "Interesses",
       "paragraph-1": "Ik hou van afwisseling, maar tegelijk ook van uitdagende problemen. Ik ben een beetje van alle markten thuis, een echte full-stack developer dus, inclusief een deeltje DevOps. Hoewel mijn voorkeur zeer lichtjes begint te groeien richting back-end \uD83D\uDE09",
-      "paragraph-2": "Ik ben geen fan van quick & dirty oplossingen, geef mij maar systemen waar performantie, security én stabiliteit centraal staan. Ik ben een grote voorstander van clean code, best practices maar tegelijkertijd ook vooruitstrevende technieken. Een systeem waar met een gerust hart verder op kan gebouwd worden (in de ideale wereld)!"
+      "paragraph-2": "Ik ben geen fan van quick & dirty oplossingen, geef mij maar systemen waar performantie, security én stabiliteit centraal staan. Ik ben een grote voorstander van clean code, best practices maar tegelijkertijd ook vooruitstrevende technieken. Een systeem waar met een gerust hart verder op kan gebouwd worden! (in een ideale wereld)"
+    },
+    "source": {
+      "description": "Wil je een kijkje nemen in de source code van dit project? Klik hier:",
+      "link": "https://github.com/Tech2Logix/portfolio-repo"
     }
   },
   "components": {
     "titlebar": {
       "name": "Rhino van Boxelaere",
       "title": "Software Engineer",
-      "description": "Logica is mijn ruggengraat, met een gerichte en vooruitstrevende gedachtegang projecten tot een goed einde brengen. Ik ben betrouwbaar, creatief en down-to-earth, met een visie gericht naar de toekomst. Mijn deur staat altijd open om eens te sparren over een probleem, gedachtegang of technologie! (of eender wat, you name it)",
-      "mail": "rhinovanboxelaere@outlook.com",
+      "description": "Logica is mijn kernwaarde, met een gerichte en vooruitstrevende gedachtegang: projecten tot een goed einde brengen. Ik ben betrouwbaar, creatief en down-to-earth, met een visie gericht naar de toekomst. Mijn deur staat altijd open om eens te sparren over een probleem, gedachtegang of technologie! (of eender wat, you name it)",
+      "mail": "contact@rhino-vb.be",
       "birthdate": "16/05/1995",
       "city": "9255 Buggenhout",
       "drivers-license": "Rijbewijs B",
       "translate": "Taal",
       "toast": {
         "title": "Wist je dat?",
-        "content": "De PDF die je zometeen te downloaden krijgt, is he-le-maal client sided served \uD83D\uDE04. Er wordt gewoon een screenshot genomen van deze webpagina, en die krijg je zometeen als download in een pdf!!"
+        "content": "De PDF zal wordt momenteel client-side gegenereerd en zal zometeen gedownload worden. Wil je meer weten? Check de GitHub pagina! Bij problemen, gelieve me te contacteren."
       }
     }
   }

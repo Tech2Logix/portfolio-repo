@@ -7,6 +7,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 This application was created to refresh my Angular skills. It started small, and I gradually decided to add the necessary features for a functional portfolio website. 
 There is most certainly technical dept, but I believe it's a solid effort to showcase my skills. 
 
+## Example
+
+Want to see a live running example of this project? Visit [http://portfolio.rhino-vb.be](http://portfolio.rhino-vb.be)
+
 ## Technologies / Dependencies
 - Angular
 - Bootstrap

@@ -46,6 +46,10 @@
   position: absolute;
   bottom: 85px;
   width: 25%;
+  line-height: 16px;
+  .location {
+    padding-bottom: 8px;
+  }
 }
 
 .bottom {
@@ -85,6 +89,7 @@
   border-radius: 15px;
   margin: 10px 25px;
   font-weight: bold;
+  min-width: 40px;
 }
 
 .date {

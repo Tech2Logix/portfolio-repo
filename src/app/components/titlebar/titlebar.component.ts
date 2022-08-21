@@ -97,6 +97,8 @@ export class TitlebarComponent {
 
   private parsePdf(frame: HTMLElement): void {
     const options = {
+      allowTaint: false,
+      useCORS: true,
       background: 'white',
       scale: 3
     };
